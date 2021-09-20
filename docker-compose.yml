@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  auto_deploy_docker: # name of the service
+    image: auto-deploy-docker # the image to use
+    container_name: auto-deploy-docker # what to label the container for docker ps
+    ports:
+      - 80:80 # map port 80 to 80
+    restart: unless-stopped # restart if failed, until we stop it ourselves
