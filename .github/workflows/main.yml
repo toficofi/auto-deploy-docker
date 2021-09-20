@@ -27,4 +27,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: sh deploy.sh
+          script: cd auto-deploy-docker && sh deploy.sh
